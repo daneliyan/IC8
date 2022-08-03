@@ -1612,6 +1612,9 @@ header .search-bar-container label {
   border: none;
   border-top: 2px solid var(--cyan-400);
 }
+.experts__item-descr {
+  color: var(--grey-300);
+}
 
 .industries {
   padding-top: 72px;
@@ -1622,7 +1625,6 @@ header .search-bar-container label {
 }
 .industries__descr {
   margin-bottom: 48px;
-  color: var(--grey-300);
 }
 .industries__cards {
   display: -ms-grid;
