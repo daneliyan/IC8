@@ -1622,6 +1622,7 @@ header .search-bar-container label {
 }
 .industries__descr {
   margin-bottom: 48px;
+  color: var(--grey-300);
 }
 .industries__cards {
   display: -ms-grid;
