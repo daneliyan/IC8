@@ -1989,6 +1989,12 @@ header .search-bar-container label {
   font-size: 18px;
   line-height: 156%;
   color: var(--grey-500);
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+.footer__nav-link:hover {
+  color: var(--cyan-400);
 }
 .footer__nav-item--fluid {
   margin-bottom: 24px;
