@@ -1310,6 +1310,7 @@ h4 {
     width: 52px;
     height: 32px;
     margin-right: 24px;
+    margin-left: auto;
   }
 }
 .header__btns {
