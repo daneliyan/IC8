@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>IC8 Website</title>
+  <link rel="preload" href="fonts/MontserratThin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MontserratBlack.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <script src="js/choices.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <div class="mob-header" data-menu>
+  <nav class="mob-header__nav">
+    <ul class="list-reset mob-header__nav-list">
+      <li class="mob-header__nav-item--fluid">
+        <div class="accordion">
+          <button class="btn-reset accordion__control" aria-expanded="false">
+            <span class="accordion__title">Enterprise</span>
+            <i class="icons _icon-ChevronDown"></i>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <ul class="list-reset mob-header__nav-list--list">
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">Биллинг</a></li>
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">Мониторинг</a></li>
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">Smart Space</a></li>
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">VATS</a></li>
+            </ul>
+            <div class="viewall-btn">
+              <a href="enterprise.html" class="btn link medium">
+                Смотреть все
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mob-header__nav-item--fluid">
+        <div class="accordion">
+          <button class="btn-reset accordion__control" aria-expanded="false">
+            <span class="accordion__title">Кейсы</span>
+            <i class="icons _icon-ChevronDown"></i>
+          </button>
+          <div class="accordion__content" aria-hidden="true">
+            <ul class="list-reset mob-header__nav-list--list">
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">VATS Волна</a></li>
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">Гости Крым</a></li>
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">FiveFlow</a></li>
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">Умное ЖКХ</a></li>
+              <li class="mob-header__nav-item--item"><a href="#" class="mob-header__nav-link--link">Биллинг Волна</a></li>
+            </ul>
+            <div class="viewall-btn">
+              <a href="cases.html" class="btn link medium">
+                Смотреть все
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="mob-header__nav-item"><a href="blog.html" class="mob-header__nav-link">Блог</a></li>
+      <li class="mob-header__nav-item"><a href="about.html" class="mob-header__nav-link">О нас</a></li>
+      <li class="mob-header__nav-item"><a href="contacts.html" class="mob-header__nav-link">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="mob-header__btns">
+    <button class="btn-reset btn fill medium mob-header__btn" data-graph-path="contact">Связаться</button>
+  </div>
+</div>
+
+    <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <div class="logo">
+        <a href="index.html"><img loading="lazy" src="./img/logo.svg" class="image" alt="Логотип"></a>
+      </div>
+      <div class="menu">
+        <div class="search__wrapper">
+          <i class="icons _icon-SearchLarge" id="search-btn"></i>
+        </div>
+        <nav class="nav">
+          <ul class="list-reset nav__list">
+            <li class="nav__item">
+              <button class="btn-reset nav__btn">
+                Enterprise
+                <i class="icons _icon-ChevronDown" id="nav__btn-icon"></i>
+              </button>
+              <div class="dropdown">
+                <ul class="list-reset dropdown__list">
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Биллинг</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Мониторинг</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Smart Space</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">VATS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__item">
+              <button class="btn-reset nav__btn">
+                Кейсы
+                <i class="icons _icon-ChevronDown" id="nav__btn-icon"></i>
+              </button>
+              <div class="dropdown">
+                <ul class="list-reset dropdown__list">
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">VATS Волна</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Гости Крым</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">FiveFlow</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Биллинг Волна</a></li>
+                  <li class="dropdown__item"><a href="#" class="dropdown__link">Умное ЖКХ</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__item"><a href="blog.html" class="nav__link">Блог</a></li>
+            <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__btns">
+        <button class="btn-reset btn fill medium" data-graph-path="contact">Связаться</button>
+      </div>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="Поиск...">
+      <label for="search-bar" class="icons _icon-SearchLarge"></label>
+    </form>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+      <!-- Swiper -->
+  <div class="swiper hero__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="hero__slide-container">
+          <div class="hero__slide-box">
+            <div class="hero__slide-content">
+              <div class="hero__slide-text">
+                <h1 class="hero__slide-title">Биллинг</h1>
+                <p class="hero__slide-descr descr2">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако</p>
+              </div>
+              <div class="hero__slide-btn">
+                <a href="#" class="btn fill big">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slider-img"><img loading="lazy" src="./img/hero/slide-01.png" class="image" alt="Биллинг"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="hero__slide-container">
+          <div class="hero__slide-box">
+            <div class="hero__slide-content">
+              <div class="hero__slide-text">
+                <h1 class="hero__slide-title">Биллинг</h1>
+                <p class="hero__slide-descr descr2">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако</p>
+              </div>
+              <div class="hero__slide-btn">
+                <a href="#" class="btn fill big">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slider-img"><img loading="lazy" src="./img/hero/slide-02.png" class="image" alt="Биллинг"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="hero__slide-container">
+          <div class="hero__slide-box">
+            <div class="hero__slide-content">
+              <div class="hero__slide-text">
+                <h1 class="hero__slide-title">Биллинг</h1>
+                <p class="hero__slide-descr descr2">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако</p>
+              </div>
+              <div class="hero__slide-btn">
+                <a href="#" class="btn fill big">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slider-img"><img loading="lazy" src="./img/hero/slide-03.png" class="image" alt="Биллинг"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="hero__slide-container">
+          <div class="hero__slide-box">
+            <div class="hero__slide-content">
+              <div class="hero__slide-text">
+                <h1 class="hero__slide-title">Биллинг</h1>
+                <p class="hero__slide-descr descr2">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако</p>
+              </div>
+              <div class="hero__slide-btn">
+                <a href="#" class="btn fill big">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slider-img"><img loading="lazy" src="./img/hero/slide-04.png" class="image" alt="Биллинг"></div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+      <section class="partners">
+  <div class="container">
+    <div class="swiper partners__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/partners/logos.svg" alt="Pure">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/partners/logos-1.svg" alt="Qiwi">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/partners/logos-2.svg" alt="S7 Airlines">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/partners/logos-3.svg" alt="ВкусВилл">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/partners/logos-4.svg" alt="КлючАвто">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/partners/logos-5.svg" alt="Yamaha">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="enterprise">
+  <div class="container">
+    <h2 class="title1 enterprise__title">Enterprise</h2>
+    <div class="enterprise__cards">
+      <div class="enterprise__card">
+        <div class="enterprise__card-img"><img loading="lazy" src="./img/enterprise/enterprise-01.jpg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-icon"><img src="./img/enterprise/enterprise__icon-01.svg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-box">
+          <div class="enterprise__card-content">
+            <h3 class="enterprise__card-title">Биллинг</h3>
+            <p class="enterprise__card-descr">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+          </div>
+          <div class="enterprise__card-btn">
+            <a href="#" class="btn secondary medium">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="enterprise__card">
+        <div class="enterprise__card-img"><img loading="lazy" src="./img/enterprise/enterprise-02.jpg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-icon"><img src="./img/enterprise/enterprise__icon-02.svg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-box">
+          <div class="enterprise__card-content">
+            <h3 class="enterprise__card-title">Биллинг</h3>
+            <p class="enterprise__card-descr">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+          </div>
+          <div class="enterprise__card-btn">
+            <a href="#" class="btn secondary medium">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="enterprise__card">
+        <div class="enterprise__card-img"><img loading="lazy" src="./img/enterprise/enterprise-03.jpg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-icon"><img src="./img/enterprise/enterprise__icon-03.svg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-box">
+          <div class="enterprise__card-content">
+            <h3 class="enterprise__card-title">Биллинг</h3>
+            <p class="enterprise__card-descr">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+          </div>
+          <div class="enterprise__card-btn">
+            <a href="#" class="btn secondary medium">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="enterprise__card">
+        <div class="enterprise__card-img"><img loading="lazy" src="./img/enterprise/enterprise-01.jpg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-box">
+          <div class="enterprise__card-content">
+            <h3 class="enterprise__card-title">Биллинг</h3>
+            <p class="enterprise__card-descr">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+          </div>
+          <div class="enterprise__card-btn">
+            <a href="#" class="btn secondary medium">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="enterprise__card">
+        <div class="enterprise__card-img"><img loading="lazy" src="./img/enterprise/enterprise-02.jpg" class="image" alt="Биллинг"></div>
+        <div class="enterprise__card-box">
+          <div class="enterprise__card-content">
+            <h3 class="enterprise__card-title">Биллинг</h3>
+            <p class="enterprise__card-descr">Миграция в Cloud Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+          </div>
+          <div class="enterprise__card-btn">
+            <a href="#" class="btn secondary medium">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="enterprise__btn1">
+      <a href="products.html" class="btn fill big">Все продукты</a>
+    </div>
+    <div class="enterprise__btn2">
+      <a href="products.html" class="btn fill big">Ещё</a>
+    </div>
+  </div>
+</section>
+
+      <section class="experts">
+  <div class="container">
+    <div class="experts__row">
+      <div class="experts__item">
+        <h3 class="experts__item-title">топ 3</h3>
+        <hr>
+        <p class="descr4 experts__item-descr">Крупнейших поставщиков решений для видеонаблюдения по версии</p>
+      </div>
+      <div class="experts__item">
+        <h3 class="experts__item-title">5000</h3>
+        <hr>
+        <p class="descr4 experts__item-descr">Крупнейших поставщиков решений для видеонаблюдения по версии</p>
+      </div>
+      <div class="experts__item">
+        <h3 class="experts__item-title">1500</h3>
+        <hr>
+        <p class="descr4 experts__item-descr">Крупнейших поставщиков решений для видеонаблюдения по версии</p>
+      </div>
+      <div class="experts__item">
+        <h3 class="experts__item-title">14</h3>
+        <hr>
+        <p class="descr4 experts__item-descr">Крупнейших поставщиков решений для видеонаблюдения по версии</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="industries">
+  <div class="container">
+    <h2 class="title1 industries__title">Отрасли:</h2>
+    <p class="descr1 industries__descr">Продукты отсортированные по отрослям</p>
+    <div class="industries__cards">
+      <div class="industries__card">
+        <a class="industries__card-link" href="#">
+          <div class="industries__card-img">
+            <img src="./img/industries/energetika.svg" class="image" alt="Энергетика">
+          </div>
+          <h3 class="title3 industries__card-title">Энергетика</h3>
+          <p class="descr4">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+        </a>
+      </div>
+      <div class="industries__card">
+        <a class="industries__card-link" href="#">
+          <div class="industries__card-img">
+            <img src="./img/industries/logistika.svg" class="image" alt="Логистика">
+          </div>
+          <h3 class="title3 industries__card-title">Логистика</h3>
+          <p class="descr4">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+        </a>
+      </div>
+      <div class="industries__card">
+        <a class="industries__card-link" href="#">
+          <div class="industries__card-img">
+            <img src="./img/industries/development.svg" class="image" alt="Девелопмент">
+          </div>
+          <h3 class="title3 industries__card-title">Девелопмент</h3>
+          <p class="descr4">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+        </a>
+      </div>
+      <div class="industries__card">
+        <a class="industries__card-link" href="#">
+          <div class="industries__card-img">
+            <img src="./img/industries/gosudarstvo.svg" class="image" alt="Государство">
+          </div>
+          <h3 class="title3 industries__card-title">Государство</h3>
+          <p class="descr4">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+        </a>
+      </div>
+      <div class="industries__card">
+        <a class="industries__card-link" href="#">
+          <div class="industries__card-img">
+            <img src="./img/industries/wfm.svg" class="image" alt="WFM">
+          </div>
+          <h3 class="title3 industries__card-title">WFM</h3>
+          <p class="descr4">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+        </a>
+      </div>
+      <div class="industries__card">
+        <a class="industries__card-link" href="#">
+          <div class="industries__card-img">
+            <img src="./img/industries/telecom.svg" class="image" alt="Телеком">
+          </div>
+          <h3 class="title3 industries__card-title">Телеком</h3>
+          <p class="descr4">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="cases">
+  <div class="container">
+    <h2 class="title1 cases__title">Кейсы:</h2>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper cases__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="cases__card">
+          <div class="cases__card-img"><img loading="lazy" src="./img/cases/cases-01.jpg" class="image" alt="Миграция в Cloud"></div>
+          <div class="cases__card-box">
+            <div class="cases__card-content">
+              <h3 class="title3 cases__card-title">Миграция в Cloud</h3>
+              <p class="descr3 cases__card-descr">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+            </div>
+            <div class="cases__card-btn">
+              <a href="#" class="btn link medium">
+                Подробнее
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="cases__card">
+          <div class="cases__card-img"><img loading="lazy" src="./img/cases/cases-01.jpg" class="image" alt="Миграция в Cloud"></div>
+          <div class="cases__card-box">
+            <div class="cases__card-content">
+              <h3 class="title3 cases__card-title">Миграция в Cloud 2</h3>
+              <p class="descr3 cases__card-descr">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+            </div>
+            <div class="cases__card-btn">
+              <a href="#" class="btn link medium">
+                Подробнее
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="cases__card">
+          <div class="cases__card-img"><img loading="lazy" src="./img/cases/cases-01.jpg" class="image" alt="Миграция в Cloud"></div>
+          <div class="cases__card-box">
+            <div class="cases__card-content">
+              <h3 class="title3 cases__card-title">Миграция в Cloud 3</h3>
+              <p class="descr3 cases__card-descr">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+            </div>
+            <div class="cases__card-btn">
+              <a href="#" class="btn link medium">
+                Подробнее
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="cases__card">
+          <div class="cases__card-img"><img loading="lazy" src="./img/cases/cases-01.jpg" class="image" alt="Миграция в Cloud"></div>
+          <div class="cases__card-box">
+            <div class="cases__card-content">
+              <h3 class="title3 cases__card-title">Миграция в Cloud 4</h3>
+              <p class="descr3 cases__card-descr">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+            </div>
+            <div class="cases__card-btn">
+              <a href="#" class="btn link medium">
+                Подробнее
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="cases__card">
+          <div class="cases__card-img"><img loading="lazy" src="./img/cases/cases-01.jpg" class="image" alt="Миграция в Cloud"></div>
+          <div class="cases__card-box">
+            <div class="cases__card-content">
+              <h3 class="title3 cases__card-title">Миграция в Cloud 5</h3>
+              <p class="descr3 cases__card-descr">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+            </div>
+            <div class="cases__card-btn">
+              <a href="#" class="btn link medium">
+                Подробнее
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="cases__card">
+          <div class="cases__card-img"><img loading="lazy" src="./img/cases/cases-01.jpg" class="image" alt="Миграция в Cloud"></div>
+          <div class="cases__card-box">
+            <div class="cases__card-content">
+              <h3 class="title3 cases__card-title">Миграция в Cloud 6</h3>
+              <p class="descr3 cases__card-descr">Перенесите IT-инфраструктуру в отечественное облако с максимальным уровнем защиты персональных данных.</p>
+            </div>
+            <div class="cases__card-btn">
+              <a href="#" class="btn link medium">
+                Подробнее
+                <i class="icons _icon-ChevronRight"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cases__btn1">
+      <a href="cases.html" class="btn fill big">Еще</a>
+    </div>
+    <div class="cases__btn2">
+      <a href="cases.html" class="btn fill big">Смотреть</a>
+    </div>
+  </div>
+</section>
+
+      <section class="interface">
+  <div class="container">
+    <h2 class="title1 interface__title">Лаборатория пользовательского опыта</h2>
+    <p class="descr1 interface__descr">
+      Легко подключайте и настраивайте нужные сервисы в консоли управления. Установите интерфейс командной строки (CLI) или управляйте ресурсами через Terraform.
+    </p>
+    <div class="interface__img">
+      <img loading="lazy" src="./img/interface/interface-img.jpg" class="image" alt="Скрин интерфейса">
+      <img loading="lazy" src="./img/interface/interface-img__mob.jpg" class="image__mob" alt="Скрин интерфейса">
+    </div>
+  </div>
+</section>
+
+      <section class="blog">
+  <div class="container">
+    <h2 class="title1 blog__title">Блог</h2>
+    <div class="posts">
+      <article class="blog-post">
+        <h3 class="title3 blog-post__title">
+          <a href="#link" class="blog-post__link">152-ФЗ в облаке: хранение персональных данных в облаке</a>
+        </h3>
+        <time class="blog-post__date">2022 сентября 01</time>
+        <div class="blog-post__tags">
+          <a class="blog-post__tag" href="#">Новости</a>
+          <a class="blog-post__tag" href="#">Новости 2</a>
+          <a class="blog-post__tag" href="#">Новости</a>
+          <a class="blog-post__tag" href="#">Новости 2</a>
+          <a class="blog-post__tag" href="#">Новости</a>
+          <a class="blog-post__tag" href="#">Новости 2</a>
+        </div>
+      </article>
+      <article class="blog-post">
+        <h3 class="title3 blog-post__title">
+          <a href="#link" class="blog-post__link">152-ФЗ в облаке: хранение персональных данных в облаке</a>
+        </h3>
+        <time class="blog-post__date">2022 сентября 01</time>
+        <div class="blog-post__tags">
+          <a class="blog-post__tag" href="#">Новости</a>
+          <a class="blog-post__tag" href="#">Новости 2</a>
+        </div>
+      </article>
+      <article class="blog-post">
+        <h3 class="title3 blog-post__title">
+          <a href="#link" class="blog-post__link">152-ФЗ в облаке: хранение персональных данных в облаке</a>
+        </h3>
+        <time class="blog-post__date">2022 сентября 01</time>
+        <div class="blog-post__tags">
+          <a class="blog-post__tag" href="#">Новости</a>
+        </div>
+      </article>
+    </div>
+    <div class="blog__btn">
+      <a href="blog.html" class="btn fill big">Читать</a>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer__cta">
+    <div class="container">
+      <div class="footer__cta-wrapper">
+        <div class="footer__cta-content">
+          <h2 class="title2 footer__cta-title">Хотите у нас работать?</h2>
+          <h2 class="title2 footer__cta-title--mob">Хотите узнать больше?</h2>
+          <p class="descr3 footer__cta-descr">По любым вопросам вы можете обратиться к нам через форму обратной связи, и наши специалисты ответят вам в течение 24 часов</p>
+          <p class="descr3 footer__cta-descr--mob">Вы можете обратиться к нам через форму обратной связи.</p>
+          <button class="btn-reset btn fill big footer__cta-btn" data-graph-path="contact">Связаться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__wrapper">
+    <div class="container">
+      <div class="footer__nav">
+        <nav class="footer__nav-column">
+          <div class="footer__nav-title">Enterprise</div>
+          <ul class="list-reset footer__nav-list">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Биллинг</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Мониторинг</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Smart Space</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">VATS</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav-column">
+          <div class="footer__nav-title">Кейсы</div>
+          <ul class="list-reset footer__nav-list">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">VATS Волна</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Гости Крым</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">FiveFlow</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Биллинг Волна</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Умное ЖКХ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav-column">
+          <ul class="list-reset footer__nav-list">
+            <li class="footer__nav-item footer__nav-item--fluid"><a href="blog.html" class="footer__nav-link footer__nav-link--fluid">Блог</a></li>
+            <li class="footer__nav-item footer__nav-item--fluid"><a href="about.html" class="footer__nav-link footer__nav-link--fluid">О нас</a></li>
+            <li class="footer__nav-item footer__nav-item--fluid"><a href="contacts.html" class="footer__nav-link footer__nav-link--fluid">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__info">
+        <div class="logo">
+          <a href="index.html"><img loading="lazy" src="./img/logo.svg" class="image" alt="Логотип"></a>
+        </div>
+        <div class="footer__address">125009 Москва, ул. Моховая, 13</br>(м. Охотный ряд, выход к ул. Моховая, 100 метров)</div>
+        <div class="footer__phone">Справочная:</br><a href="tel:+74957370101" class="footer__phone-link">+7 495 737-01-01</a></div>
+        <div class="footer__phone">Справочная:</br><a href="tel:+74957370101" class="footer__phone-link">+7 495 737-01-01</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="contact">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+      <i class="icons _icon-RemoveLarge"></i>
+    </button>
+    <div class="graph-modal__content">
+      <h2 class="title2 modal__title">Contact Us</h2>
+      <p class="descr3 modal__descr">One of our experts will get in touch with you shortly. Online Support is available
+        24×7</p>
+      <form action="#" class="form">
+        <label class="form__label">
+          <span class="form__label-title">Имя и Фамилия</span>
+          <input type="text" name="Имя и Фамилия" class="input-reset form__input" placeholder="Владислав Владиславович">
+        </label>
+        <label class="form__label">
+          <span class="form__label-title">Почта</span>
+          <input type="email" name="E-mail" class="input-reset form__input"
+            placeholder="vladislav.vladislavovich@company.ru">
+        </label>
+        <label class="form__label">
+          <span class="form__label-title">Номер телефона</span>
+          <div class="form-group">
+            <span>+7</span>
+            <input type="tel" name="Номер телефона" class="input-reset form__input form__input--fluid"
+              placeholder="Номер телефона">
+          </div>
+        </label>
+        <label class="form__label">
+          <span class="form__label-title">Ваше сообщение</span>
+          <textarea name="message" placeholder="Введите сообщение"
+            class="input-reset form__input form__input--textarea"></textarea>
+        </label>
+        <button class="btn-reset btn fill big form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="rezume">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+      <i class="icons _icon-RemoveLarge"></i>
+    </button>
+    <div class="graph-modal__content">
+      <h2 class="title2 modal__title">Contact Us</h2>
+      <p class="descr3 modal__descr">One of our experts will get in touch with you shortly. Online Support is available
+        24×7</p>
+      <form action="" class="form">
+        <label class="form__label">
+          <span class="form__label-title">Имя и Фамилия</span>
+          <input type="text" name="Имя и Фамилия" class="input-reset form__input" placeholder="Владислав Владиславович">
+        </label>
+        <label class="form__label">
+          <span class="form__label-title">Почта</span>
+          <input type="email" name="E-mail" class="input-reset form__input"
+            placeholder="vladislav.vladislavovich@company.ru">
+        </label>
+        <label class="form__label">
+          <span class="form__label-title">Номер телефона</span>
+          <div class="form-group">
+            <span>+7</span>
+            <input type="tel" name="Номер телефона" class="input-reset form__input form__input--fluid"
+              placeholder="Номер телефона">
+          </div>
+        </label>
+        <label class="form__label">
+          <span class="form__label-title">Сфера</span>
+          <select name="Сфера" id="multi-default" class="multi-default">
+            <option value="Веб-дизайн">Веб-дизайн</option>
+            <option value="Веб-разработка">Веб-разработка</option>
+            <option value="Программирование">Программирование</option>
+          </select>
+        </label>
+        <label class="form__label">
+          <span class="form__label-title">Прикрепите свое резюме:</span>
+          <div class="custom-file-upload" for="file-upload">
+            <span>Выберите файлы</span> или перетяните их сюда
+            <input id="uploaded_file" type="file" size="1" name="uploaded_file" onchange="file_selected();" class="input-reset btn-reset form__input">
+            <div id="file_name"></div>
+          </div>
+        </label>
+        <button class="btn-reset btn fill big form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
